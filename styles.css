@@ -208,10 +208,14 @@ body {
   background: #25336e;
   border: none;
   border-radius: 999px;
-  cursor: pointer;
+  cursor: pointer;s
   z-index: 0;
   overflow: hidden;
   transition: transform 0.28s ease
+}
+.contactBtn {
+  color: white;
+  text-decoration: none;
 }
  .glow-btn:hover {
   transform: scale(1.1);
