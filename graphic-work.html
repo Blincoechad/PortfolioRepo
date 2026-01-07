@@ -13,33 +13,38 @@
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
-        <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="frontend-logic.html">Front-End Logic</a></li>
-                <li><a href="graphic-work.html">Graphic Work</a></li>
-                <li><a href="websites.html">WebSites</a></li>
-                <li><a href="contact-me.html">Contact</a></li>
-            </ul>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="frontend-logic.html">Front-End Logic</a></li>
+        <li><a href="graphic-work.html">Graphic Work</a></li>
+        <li><a href="websites.html">WebSites</a></li>
+        <li><a href="contact-me.html">Contact</a></li>
+      </ul>
     </nav>
 
     <main style="max-width:900px;margin:64px auto;padding:20px;">
-      <h1>Graphic Work</h1>
-      <p>Placeholder page for graphic design and visual work — upload images,
-        case studies, and downloadable assets here.</p>
 
       <section class="z-grid-wrapper" aria-label="Graphic pieces grid">
-        <h2>Adobe Graphic Work</h2>
+        <div class="graphicPage-title">
+          <h1><span class="graphicWork">Graphic Work</span></h1>
+          <p>Adobe Graphic Work</p>
+        </div>
         <div class="z-grid">
           <article class="z-box">
             <a class="card-link" href="#" aria-label="Open Project One"
               aria-label="Open Project" ;>
-              <img src="media/moviePoster.png" alt="color program">
+              <img class="clickable-image" src="media/moviePoster.png"
+                alt="color program">
+
               <span class="z-badge">1</span>
               <h3 class="graphic-heading">Movie Poster</h3>
-              <p class="graphic-subHeading">Need to create a scary Movie Poster
-                that drew the attenton of <br>the buyer.
-                PhotoShop Work</p>
+              <p class="graphic-subHeading">Developed a movie poster as a
+                marketing asset, designed to
+                visually engage target audiences and encourage movie interest
+                through intentional layout,
+                color usage, and typographic choices.</p>
             </a>
+
           </article>
           <article class="z-box">
             <div class="media-slot">
@@ -51,12 +56,14 @@
             <a class="card-link" href="#" aria-label="Open Project Two">
               <span class="z-badge">2</span>
               <h3 class="graphic-heading2">Video Production</h3>
-              <p class="graphic-subHeading2"> I helped with the video editing
-                and did the credit work and <br>
-                effects! Started from storyboarding and planning my goal and
-                overall objective,<br>
-                and ended with a group of friends and some Adobe Software and we
-                had a Short Movie Clip!
+              <p class="graphic-subHeading2"> I contributed to the project by
+                handling video editing,
+                creating credits, and implementing visual effects. I was
+                involved from the initial
+                storyboarding and goal-setting stages through to execution,
+                collaborating with a
+                team of peers using Adobe software to produce a completed short
+                film.
 
               </p>
             </a>
@@ -65,7 +72,7 @@
           <article class="z-box">
             <a class="card-link" href="#" aria-label="Open Project Three">
               <span class="z-badge">3</span>
-              <h3>Project Three</h3>
+              <h3>Background Work</h3>
               <p>Brief caption or medium used.</p>
             </a>
           </article>
@@ -80,6 +87,11 @@
       <p class="footer-text">© 2025 Chad Blincoe. All rights reserved.</p>
     </footer>
 
+    <!-- image overlay div -->
+    <div id="overlay">
+      <span id="close">&times;</span>
+      <img id="overlay-img" src alt="Expanded Image">
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
