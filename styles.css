@@ -161,6 +161,7 @@ body {
   opacity: .7;
   position: relative;
   z-index: 1;
+  filter: brightness(1) contrast(1);
 } 
 /* box with heading and subheading */
 .text-left {
