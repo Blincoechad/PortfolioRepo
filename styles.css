@@ -161,7 +161,7 @@ body {
   opacity: .7;
   position: relative;
   z-index: 1;
-  filter: brightness(1) contrast(1);
+  filter: contrast(1);
 } 
 /* box with heading and subheading */
 .text-left {
@@ -199,33 +199,34 @@ body {
   color: rgb(143, 149, 232);
   z-index: 2;
 }
+
 .webDesigner-text {
   color: var(--text-secondary);
   text-shadow:  2px 2px 12px black ;
-  transition: transform 0.3s ease;
+  transition: transform 0.7s ease;
   display: inline-block;
   z-index: 6;
-  margin-top: 8px;
+  margin: 8px 0 0 0;
   transform: translateX(140px);
 }
 
 .webDesigner-text:hover {
-  transform: translateX(140px) translateY(-5px);
+ transform: translateX(140px) translateY(-5px);
 }/*add transition to make text have hover effect*/
 
-.htmlCssJavascript {
+.subtitle {
   color: var(--text-secondary);
   text-shadow:  2px 2px 12px black ;
-  font-size: 27px;
+  font-size: 20px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   transition: transform 0.3s ease;
   display: inline-block;
   z-index: 6;
-  margin-top: 8px;
+  margin: 8px 0 0 0;
   transform: translateX(140px);
 } 
 
-.htmlCssJavascript:hover {
+.subtitle:hover {
   transform: translateX(140px) translateY(-5px);
 }
 .glow-btn {
@@ -234,20 +235,22 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  margin-left: 50px;
+  margin-top: 30px;
   white-space: nowrap;
   padding: 0.75em 1.5em;
   min-height: 44px;
-  font-size: clamp(0.9rem, 4vw, 1.1rem);
+  font-size: clamp(1.3rem, 4vw, 1.1rem);
   letter-spacing: 0.15em;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   color: white;
-  background: #25336e;
+  background: #05060a;
   border: none;
   border-radius: 999px;
   cursor: pointer;
   overflow: hidden; /* now SAFE */
-  transition: transform 0.28s ease;
+  transition: transform 0.5s ease;
 }
 
 
@@ -257,6 +260,8 @@ body {
 }
  .glow-btn:hover {
   transform: scale(1.1);
+  background-color: rgb(15, 53, 118);
+  border: 3px solid white;
  }
 
 
