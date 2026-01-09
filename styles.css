@@ -804,7 +804,34 @@ video {
     padding: 10px;
     border-radius: 8px;
     display: block;
+  /* Center the button */
   }
+  .glow-wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .glow-btn {
+    margin-left: 0;
+    margin-top: 20px;
+    display: inline-flex; /* keep inline-flex so padding works */
+    padding: 0.5em 1em; /* slightly smaller padding */
+    font-size: clamp(1rem, 4vw, 1.1rem); /* smaller text on mobile */
+    letter-spacing: 0.05em; /* reduce spacing to prevent cut-off */
+  }
+
+  /* Reset subtitle */
+  .subtitle {
+    transform: none;
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+
+
 
   .nav-links {
     display: none;
