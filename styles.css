@@ -80,29 +80,36 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    justify-content: center; /* center across the top */
+    gap: 20px; /* spacing between buttons */
     margin: 0;
     padding: 0;
 }
 
+.nav-links li {
+    flex: 1; /* let li grow equally */
+    text-align: center; /* center the link inside */
+    max-width: 150px; /* optional cap so buttons don’t get too wide */
+}
+
 .nav-links li a {
-    display: inline-block ;
+    display: block; /* full width of li */
+    width: 100%;     /* make every button fill li width */
     text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     color: white;
     background-color: #1d3056;
     box-shadow: 2px 4px 10px #d3d1de;
-    padding: 10px 20px;
+    padding: 10px 0; /* only vertical padding, horizontal is handled by width */
     border-radius: 10px;
-    transition: background-color 0.3s, transform .3s ease-out;
+    transition: background-color 0.3s, transform 0.3s ease-out;
 }
+
 /*  */
 .nav-links li a:hover {
-    background-color: #3022a9;
-    transform: scale(1.00);
+    background-color: #191351;
+    transform: scale(1.1);
     box-shadow: 2px 2px 22px rgb(67, 113, 122);
     
 }
@@ -312,7 +319,9 @@ body {
 .cards-title {
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 30px;
+  flex-wrap: wrap;
 }
 
 
@@ -702,16 +711,24 @@ video {
   justify-content: center;
   
 }
-/* responsive */
-/* ===============================
-   Media Queries
-=============================== */
+
+
+
+.link {
+  color: white;
+           
+}
+.link:hover {
+  color: blue;
+}
+
+/* 
+   Media Queries */
+
 
 
 
 /* Large screens */
-/* Desktop large screens */
-/* Desktop large screens */
 @media (min-width: 1025px) {
   .box2-card-image {
     height: 220px;
