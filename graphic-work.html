@@ -6,13 +6,16 @@
     <title>Graphic Work</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- Navigation -->
     <nav class="navBar">
       <button class="hamburger" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </button>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="frontend-logic.html">Front-End Logic</a></li>
@@ -22,76 +25,106 @@
       </ul>
     </nav>
 
-    <main style="max-width:900px;margin:64px auto;padding:20px;">
-
+    <!-- Main content -->
+    <main class="page-wrapper">
       <section class="z-grid-wrapper" aria-label="Graphic pieces grid">
-        <div class="graphicPage-title">
-          <h1><span class="graphicWork">Graphic Work</span></h1>
+
+        <header class="graphicPage-title">
+          <h1 class="graphicWork">Graphic Work</h1>
           <p>Adobe Graphic Work</p>
-        </div>
+        </header>
+
         <div class="z-grid">
+          <!-- Card 1 -->
           <article class="z-box">
-            <a class="card-link" href="#" aria-label="Open Project One"
-              aria-label="Open Project" ;>
-              <img class="clickable-image" src="media/moviePoster.png"
-                alt="color program">
+            <a class="card-link" href="#"
+              aria-label="Open Movie Poster Project">
+              <img
+                src="media/moviePoster.png"
+                alt="Movie poster design"
+                class="clickable-image" />
 
               <span class="z-badge">1</span>
+
               <h3 class="graphic-heading">Movie Poster</h3>
-              <p class="graphic-subHeading">Developed a movie poster as a
-                marketing asset, designed to
-                visually engage target audiences and encourage movie interest
-                through intentional layout,
-                color usage, and typographic choices.</p>
-            </a>
-
-          </article>
-          <article class="z-box">
-            <div class="media-slot">
-              <video preload="metadata" paused controls>
-                <source src="media/FinalCut.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <a class="card-link" href="#" aria-label="Open Project Two">
-              <span class="z-badge">2</span>
-              <h3 class="graphic-heading2">Video Production</h3>
-              <p class="graphic-subHeading2"> I contributed to the project by
-                handling video editing,
-                creating credits, and implementing visual effects. I was
-                involved from the initial
-                storyboarding and goal-setting stages through to execution,
-                collaborating with a
-                team of peers using Adobe software to produce a completed short
-                film.
-
+              <p class="graphic-subHeading">
+                I needed to develop a movie poster as a marketing asset,
+                designed
+                to visually engage target audiences through intentional layout,
+                color usage, and typographic choices.
               </p>
             </a>
           </article>
 
+          <!-- Card 2 -->
           <article class="z-box">
-            <a class="card-link" href="#" aria-label="Open Project Three">
-              <span class="z-badge">3</span>
-              <h3>Background Work</h3>
-              <p>Brief caption or medium used.</p>
+            <div class="media-slot">
+              <video preload="metadata" controls>
+                <source src="media/FinalCut.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
+            <a class="card-link" href="#"
+              aria-label="Open Video Production Project">
+              <span class="z-badge">2</span>
+
+              <h3 class="graphic-heading2">Video Production</h3>
+              <p class="graphic-subHeading2">
+                I contributed by editing video, creating credits, and
+                implementing
+                visual effects. I was involved from storyboarding through
+                execution,
+                collaborating with peers using Adobe software to produce a short
+                film.
+              </p>
             </a>
           </article>
 
+          <!-- Card 3 -->
+          <article class="z-box z-box3-container">
+            <div class="box3">
+              <img
+                src="media/StartOldPhoto.png"
+                alt="Damaged photograph before restoration"
+                class="clickable-image box3-image" />
+              <img
+                src="media/EndOldPhoto.png"
+                alt="Photograph after restoration"
+                class="clickable-image box3-image" />
+            </div>
+
+            <a class="card-link" href="#"
+              aria-label="Open Background Restoration Project">
+              <span class="z-badge">3</span>
+
+              <h3 class="graphic-heading">Background Work</h3>
+              <p class="graphic-subHeading">
+                Restored a damaged photograph by removing unwanted subjects,
+                repairing creases, correcting alignment, and refining color
+                for a clean, natural result.
+              </p>
+            </a>
+          </article>
         </div>
       </section>
 
-      <p><a href="index.html">← Back to Home</a></p>
+      <p class="back-link">
+        <a href="index.html">← Back to Home</a>
+      </p>
     </main>
 
+    <!-- Footer -->
     <footer id="contact">
       <p class="footer-text">© 2025 Chad Blincoe. All rights reserved.</p>
     </footer>
 
-    <!-- image overlay div -->
+    <!-- Image Overlay -->
     <div id="overlay">
       <span id="close">&times;</span>
-      <img id="overlay-img" src alt="Expanded Image">
+      <img id="overlay-img" alt="Expanded view" />
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>

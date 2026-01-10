@@ -373,6 +373,24 @@ body {
   grid-auto-rows: 1fr; /* force equal card heights */
   width: 100%;
 }
+
+.box3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+.box3-image {
+  flex: 0 0 48%;
+  max-width: 48%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+  
+
 .graphicPage-title {
   display: flex;
   justify-content: center;
@@ -413,11 +431,20 @@ body {
   align-items: flex-start;
   transition: transform .25s ease, box-shadow .25s ease;
 }
+.z-box3-container {
+  display: relative;
+   background: linear-gradient(180deg, rgba(24,36,80,0.95), rgba(16,22,48,0.85));
+  color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 30px rgba(2,8,20,0.45);
+  /* overflow: hidden; */
+}
 .z-box:nth-child(even) {
   background: linear-gradient(180deg, rgba(70,90,140,0.9), rgba(90,120,170,0.75));
 }
 .z-box:hover { transform: translateY(-6px); box-shadow: 0 20px 44px rgba(2,8,20,0.55); }
-.z-box h3 { margin: 0 0 8px; font-size: 20px; }
+.z-box h3 { margin: 0 0 8px; font-size: inherit; }
 .z-box p { margin: 0; opacity: 0.95; }
 
 
@@ -466,13 +493,14 @@ body {
   position: absolute;
   right: 12px;
   top: 12px;
-  background: rgba(255,255,255,0.12);
-  color: rgb(240, 233, 233);
+  background: rgba(242, 217, 217, 0.47);
+  color: rgb(5, 0, 0);
   padding: 6px 10px;
   border-radius: 999px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 20px;
   -webkit-backdrop-filter: blur(4px);
+  
 }
 .z-box img {
   width: 100%;
@@ -491,8 +519,9 @@ video {
 }
 
 .graphic-heading {
-  color: rgb(168, 166, 180);
+  color: rgb(235, 234, 240);
   text-decoration: underline;
+  font-size: 30px;
 }
 .graphic-subHeading {
   color: rgb(235, 235, 237);
@@ -921,20 +950,34 @@ video {
   }
 
   /* Images */
-  .myImg,
-  .box2-image,
-  img {
-    margin: 0;
-    height: auto;
-    width: 100%;
-    max-width: 300px;
+.myImg,
+.box2-image {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
+  .box3 {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center; 
   }
+
+  .box3-image {
+    flex: none;
+    width: 100%;
+    max-width: 420px; /* ← increase this */
+  }
+}
+
+
+
 
   /* Box2 headings */
   .heading-box2 {
     font-size: 24px;
   }
-}
+
 
 /* Extra small screens (phones) */
 @media (max-width: 600px) {
