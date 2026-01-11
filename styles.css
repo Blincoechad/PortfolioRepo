@@ -756,10 +756,13 @@ video {
     line-height: 1.6;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  
+.rebuild-clip video {
+  width: 100%;
+  max-width: 100%;   /* removes the cap */
+  height: auto;
 }
+
+
 
 
 
