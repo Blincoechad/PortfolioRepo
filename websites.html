@@ -13,7 +13,7 @@
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-             <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="frontend-logic.html">Front-End Logic</a></li>
                 <li><a href="about.html">Graphic Work</a></li>
@@ -22,13 +22,64 @@
             </ul>
         </nav>
 
-        <main style="max-width:900px;margin:64px auto;padding:20px;">
-            <h1>Redesign of Websites</h1>
-            <p>This page will showcase website redesign projects — before/after
-                screenshots, design notes, and links to demos.</p>
-            <p><a class="link" href="index.html">← Back to Home</a></p>
-        </main>
+        <main class="grid-container">
+            <h1>Website Redesigns</h1>
+            <p class="page-intro">
+                Before-and-after website redesigns showing layout, usability,
+                and visual improvements with live demos.
+            </p>
 
+            <!-- Website -->
+            <section class="redesign-row">
+                <div class="media clickable-image">
+                    <img src="media/beforeSite.png"
+     width="350" height="300"
+     alt="Before Redesign Screenshot" />
+
+                </div>
+               
+
+                <div class="description">
+                    <h2>Business Website Redesign</h2>
+                    <p>
+                        Modernized layout, improved typography, and simplified
+                        navigation to improve user flow and mobile
+                        responsiveness.
+                    </p>
+                     <a href="https://www.pnwx.com" target="_blank"
+                        class="live-link">
+                        View Live Site →
+                    </a>
+                </div>
+                
+            </section>
+
+            <!-- Rebuilt Site -->
+            <section class="redesign-row reverse">
+                <div class="description">
+                    <h2>Portfolio Website Rebuild</h2>
+                    <p>
+                        Reworked the structure and visual hierarchy, added
+                        consistent
+                        spacing, and optimized the design for accessibility.
+                    </p>
+                      <a href="https://example.com" target="_blank"
+                        class="live-link">
+                        View Live Site →
+                    </a>
+                </div>
+
+                <div class="media">
+                    <video src="videos/site2-before-after.mp4" controls></video>
+                  
+                </div>
+            </section>
+        </main>
+        <div id="overlay">
+      <span id="close">&times;</span>
+      <img id="overlay-img" alt="Expanded view" />
+    </div>
+        <p><a class="link" href="index.html">← Back to Home</a></p>
         <footer id="contact">
             <p class="footer-text">© 2025 Chad Blincoe. All rights reserved.</p>
         </footer>
