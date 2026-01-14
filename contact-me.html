@@ -8,8 +8,7 @@
   </head>
   <body>
     <nav class="navBar">
-       <img src="media/myLogo.png" alt="ChadBlincoeLogo"
-                class="nav-logo">
+      <img src="media/myLogo.png" alt="ChadBlincoeLogo" class="nav-logo">
       <button class="hamburger" aria-label="Toggle navigation">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -24,33 +23,114 @@
       </ul>
     </nav>
 
-    <main style="max-width:700px;margin:64px auto;padding:20px;">
-      <h1>Contact</h1>
-      <p>If you want people to contact you, here's a simple placeholder form.
-        When you're ready we can wire this up or connect it to a service like
-        Formspree.</p>
-      <form action="#" method="post">
-        <label style="display:block;margin:12px 0;">Name<br>
-          <input type="text" name="name" style="width:100%;padding:8px;" />
-        </label>
-        <label style="display:block;margin:12px 0;">Email<br>
-          <input type="email" name="email" style="width:100%;padding:8px;" />
-        </label>
-        <label style="display:block;margin:12px 0;">Message<br>
-          <textarea name="message"
-            style="width:100%;padding:8px;height:120px;"></textarea>
-        </label>
-        <button type="submit"
-          style="padding:10px 16px;border-radius:8px;background:#1d3056;color:white;border:none;">Send</button>
-      </form>
+    <div class="contact-wrapper">
+      <h1>Get In Touch</h1>
 
-      <p style="margin-top:18px;"><a class="link" href="index.html">← Back to
-          Home</a></p>
-    </main>
+      <div class="contact-form-container">
+        <!-- Form Side -->
+        <div class="form-side">
+          <h2>Send a Message</h2>
+          <p>Have a question or think I'm a good fit?
+            Send me a message!</p>
 
+          <form action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Certificate Side -->
+        <div class="certificate-side">
+          <div class="certificate-placeholder">
+            <div class="certificate-icon">🎓</div>
+            <div class="certificate-text">Certificate Placeholder<br>Replace
+              with your image</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- course certifacates ive completed on the side-->
+    <div class="slider">
+      <div class="slide-track">
+        <img src="media/certificates/CanvaIntro10:25.png"
+          alt="Canva Intro completed on">
+        <img src="media/certificates/CanvaInvitations10:25.png"
+          alt="Canva Invitations completed on">
+        <img src="media/certificates/CanvaProjects10:25.jpg" alt="completed on">
+        <img src="media/certificates/ExcelGraphs9:25.png" alt="completed on">
+        <img src="media/certificates/FigmaComponents12:25.png"
+          alt="completed on">
+        <img src="media/certificates/FigmaIntoCode9:25.png" alt="completed on">
+        <img src="media/certificates/HourOfPython1:26.png" alt="completed on">
+        <img src="media/certificates/JsDebugging1:26.png" alt="completed on">
+        <img src="media/certificates/JsAiPrograming10:25.png"
+          alt="completed on">
+        <img src="media/certificates/JsWebForms2:25.png" alt="completed on">
+        <img src="media/certificates/LeadGenChatBot7:25.png" alt="completed on">
+        <img src="media/certificates/PythonMadeApp10:15.png" alt="completed on">
+        <img src="media/certificates/SEO(SquareSpace12:24).png"
+          alt="completed on">
+        <img src="media/certificates/VideoCreationCanva9:25.png"
+          alt="completed on">
+        <img src="media/certificates/Webflow101_11:24.png"
+          alt="Webflow 101 completed on">
+        <img src="media/certificates/WebflowLayouts12:25.png"
+          alt="Webflow layouts completed on">
+        <img src="media/certificates/WebFlowNoCode12:25.png"
+          alt="Webflow NoCode completed on">
+
+        <!-- duplicate for continuous loop -->
+        <img src="media/certificates/CanvaIntro10:25.png"
+          alt="Canva Intro completed on">
+        <img src="media/certificates/CanvaInvitations10:25.png"
+          alt="Canva Invitations completed on">
+        <img src="media/certificates/CanvaProjects10:25.jpg" alt="completed on">
+        <img src="media/certificates/ExcelGraphs9:25.png" alt="completed on">
+        <img src="media/certificates/FigmaComponents12:25.png"
+          alt="completed on">
+        <img src="media/certificates/FigmaIntoCode9:25.png" alt="completed on">
+        <img src="media/certificates/HourOfPython1:26.png" alt="completed on">
+        <img src="media/certificates/JsDebugging1:26.png" alt="completed on">
+        <img src="media/certificates/JsAiPrograming10:25.png"
+          alt="completed on">
+        <img src="media/certificates/JsWebForms2:25.png" alt="completed on">
+        <img src="media/certificates/LeadGenChatBot7:25.png" alt="completed on">
+        <img src="media/certificates/PythonMadeApp10:15.png" alt="completed on">
+        <img src="media/certificates/SEO(SquareSpace12:24).png"
+          alt="completed on">
+        <img src="media/certificates/VideoCreationCanva9:25.png"
+          alt="completed on">
+        <img src="media/certificates/Webflow101_11:24.png"
+          alt="Webflow 101 completed on">
+        <img src="media/certificates/WebflowLayouts12:25.png"
+          alt="Webflow layouts completed on">
+        <img src="media/certificates/WebFlowNoCode12:25.png"
+          alt="Webflow NoCode completed on">
+      </div>
+    </div>
+    <div>
+      <p class="slider-description">
+        Click On Photos To View Certificates in Full Size
+      </p>
+    </div>
     <footer id="contact">
       <p class="footer-text">© 2025 Chad Blincoe. All rights reserved.</p>
     </footer>
+    <p><a class="link" href="index.html">← Back to Home</a></p>
 
     <script src="script.js"></script>
   </body>
