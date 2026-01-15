@@ -121,6 +121,7 @@ body {
 }
 
 /* Homepage Layout */
+
 .lang-icons {
   display: flex;
   flex-direction: row;
@@ -217,8 +218,10 @@ body {
 }
 
 .WhatIDo {
-  font-size: 28px;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  padding: 0px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: rgb(143, 149, 232);
@@ -229,16 +232,20 @@ body {
   color: var(--text-secondary);
   text-shadow: 2px 2px 12px black;
   transition: transform 0.7s ease;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   z-index: 6;
   margin: 8px 0 0 0;
+  padding: 15px;
   transform: translateX(140px);
 }
 
 .webDesigner-text:hover {
   transform: translateX(100px) translateY(-5px);
 }
-
+.subtitle {
+  color: var(--text-secondary);
+}
 
 /* Contact Me Glow Button */
 .glow-btn {
@@ -1403,7 +1410,7 @@ footer {
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
   }
-/* FrontEnd page */
+  /* FrontEnd page */
   .frontEnd-title {
     width: 90%;
     max-width: 480px;
@@ -1412,205 +1419,221 @@ footer {
     font-size: 28px;
     margin-top: 30px;
   }
-}
-
-
-  /* Homepage text */
-  .chadBlincoe {
-    position: static;
-    top: auto;
-    left: auto;
-    bottom: 10px;
-    font-size: 40px;
+  .subtitle {
     text-align: center;
+  }
+
+  /* You'll probably also want to adjust these for mobile */
+  .webDesigner-text {
+    transform: translateX(0); /* Remove the horizontal offset */
+    justify-content: center;
+    text-align: center;
+  }
+
+  .webDesigner-text:hover {
+    transform: translateX(0) translateY(-5px); /* Keep only vertical movement */
   }
 
   .WhatIDo {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  .webDesigner-text,
-  .htmlCssJavascript {
-    position: static;
-    left: auto;
-    top: auto;
-    transform: none;
-  }
-
-  .webDesigner-text:hover,
-  .htmlCssJavascript:hover,
-  .PhotoShop:hover {
-    transform: translateY(-5px);
-  }
-
-  .text-right {
-    margin-left: 0;
-    padding-top: 0;
-    text-align: center;
-  }
-
-  /* Button */
-  .glow-wrap {
-    display: flex;
     justify-content: center;
-    width: 100%;
   }
+}
 
-  .glow-btn {
-    margin-left: 0;
-    margin-top: 20px;
-    display: inline-flex;
-    padding: 0.5em 1em;
-    font-size: clamp(1rem, 4vw, 1.1rem);
-    letter-spacing: 0.05em;
-  }
+/* Homepage text */
+.chadBlincoe {
+  position: static;
+  top: auto;
+  left: auto;
+  bottom: 10px;
+  font-size: 40px;
+  text-align: center;
+}
 
-  /* Homepage images */
-  .myImg,
-  .box2-image {
-    margin: 0;
-    height: auto;
-    width: 100%;
-    max-width: 300px;
-  }
+.WhatIDo {
+  font-size: 20px;
+  text-align: center;
+}
 
-  .box3 {
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-  }
+.webDesigner-text,
+.htmlCssJavascript {
+  position: static;
+  left: auto;
+  top: auto;
+  transform: none;
+}
 
-  .box3-image {
-    flex: none;
-    width: 100%;
-    max-width: 420px;
-  }
+.webDesigner-text:hover,
+.htmlCssJavascript:hover,
+.PhotoShop:hover {
+  transform: translateY(-5px);
+}
 
-  /* Website redesign page */
-  .grid-container {
-    padding: 2rem 1rem;
-    width: 100%;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
+.text-right {
+  margin-left: 0;
+  padding-top: 0;
+  text-align: center;
+}
 
-  .website-title {
-    font-size: 2.8rem;
-    width: calc(100% - 20px);
-    max-width: 100%;
-    height: auto;
-    padding: 15px 10px;
-    margin: 0 auto 20px;
-    text-align: center;
-    box-sizing: border-box;
-  }
+/* Button */
+.glow-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-  .website-h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 15px 0;
-    width: 100%;
-    padding: 0 10px;
-    box-sizing: border-box;
-  }
+.glow-btn {
+  margin-left: 0;
+  margin-top: 20px;
+  display: inline-flex;
+  padding: 0.5em 1em;
+  font-size: clamp(1rem, 4vw, 1.1rem);
+  letter-spacing: 0.05em;
+}
 
-  .description {
-    text-align: center;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
+/* Homepage images */
+.myImg,
+.box2-image {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  max-width: 300px;
+}
 
-  .description p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin: 15px 0;
-    width: 100%;
-    padding: 0;
-    box-sizing: border-box;
-  }
+.box3 {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
 
-  .live-link {
-    display: block;
-    width: fit-content;
-    margin: 15px auto;
-    padding: 12px 20px;
-  }
+.box3-image {
+  flex: none;
+  width: 100%;
+  max-width: 420px;
+}
 
-  .media {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-  }
+/* Website redesign page */
+.grid-container {
+  padding: 2rem 1rem;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-  .media img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+.website-title {
+  font-size: 2.8rem;
+  width: calc(100% - 20px);
+  max-width: 100%;
+  height: auto;
+  padding: 15px 10px;
+  margin: 0 auto 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
 
-  .rebuild-clip {
-    width: 100%;
-    margin: 0 auto;
-  }
+.website-h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 15px 0;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
 
-  .rebuild-clip video,
-  .rebuildVideo {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
+.description {
+  text-align: center;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 
-  /* Redesign row layout */
-  .redesign-row,
-  .redesign-row.reverse {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto 3rem;
-  }
+.description p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 15px 0;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  /* First section: image above, text below */
-  .redesign-row:not(.reverse) .media {
-    order: 1;
-  }
+.live-link {
+  display: block;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 12px 20px;
+}
 
-  .redesign-row:not(.reverse) .description {
-    order: 2;
-  }
+.media {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
 
-  /* Second section: video above, text below */
-  .redesign-row.reverse .media,
-  .redesign-row.reverse .rebuild-clip {
-    order: 1;
-  }
+.media img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-  .redesign-row.reverse .description {
-    order: 2;
-  }
-  /* contact page*/
-  .contact-form-container {
-    flex-direction: column;
-    width: 100%;
-  }
+.rebuild-clip {
+  width: 100%;
+  margin: 0 auto;
+}
 
-  .form-side,
-  .certificate-side {
-    flex: 1 1 100%;
-    min-width: 100%;
-    width: 100%;
-  }
+.rebuild-clip video,
+.rebuildVideo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
 
-  .contact-heading {
-    width: 100%; /* Remove fixed width on mobile */
-    max-width: 480px;
-  }
+/* Redesign row layout */
+.redesign-row,
+.redesign-row.reverse {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto 3rem;
+}
+
+/* First section: image above, text below */
+.redesign-row:not(.reverse) .media {
+  order: 1;
+}
+
+.redesign-row:not(.reverse) .description {
+  order: 2;
+}
+
+/* Second section: video above, text below */
+.redesign-row.reverse .media,
+.redesign-row.reverse .rebuild-clip {
+  order: 1;
+}
+
+.redesign-row.reverse .description {
+  order: 2;
+}
+/* contact page*/
+.contact-form-container {
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-side,
+.certificate-side {
+  flex: 1 1 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
+.contact-heading {
+  width: 100%; /* Remove fixed width on mobile */
+  max-width: 480px;
 }
 
 /* Extra small screens */
@@ -1638,7 +1661,7 @@ footer {
     padding: 1.5rem 0.75rem;
   }
   /* frontEnd page - smaller screen */
-   .frontEnd-title {
+  .frontEnd-title {
     width: 95%;
     font-size: 24px;
     padding: 15px 10px;
