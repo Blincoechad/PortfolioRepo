@@ -1168,7 +1168,9 @@ video {
 }
 
 .iphone-clip {
-  max-height: 400px; /* Adjust as needed */
+  position: relative;
+  margin: auto;
+  max-height: 400px; /* Adjust */
   object-fit: contain;
 }
 
