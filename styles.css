@@ -454,7 +454,7 @@ body {
   font-family: inter, sans-serif;
   font-weight: bold;
   padding: 20px;
-  line-height: 1.5rem;;
+  line-height: 1.5rem;
 }
 
 .categories {
@@ -835,7 +835,7 @@ video {
   margin-bottom: 5rem;
 }
 .redesign-row .text {
-   max-width: 600px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
   line-height: 1.5rem;
@@ -1136,7 +1136,7 @@ video {
 }
 .frontEnd-box .text {
   line-height: 1.5rem;
-} 
+}
 
 .project-titles {
   font-size: 1.8rem;
@@ -1149,7 +1149,6 @@ video {
 .frontEnd-box .z-box-link {
   margin-bottom: 60px;
 }
-
 
 /*  styles to constrain media */
 .z-box-image {
@@ -1454,7 +1453,6 @@ footer {
   .graphicWork {
     display: block;
   }
-  
 
   /* Homepage boxes & grids */
   .box1,
@@ -1493,7 +1491,6 @@ footer {
     text-align: center;
   }
 
-  
   .webDesigner-text {
     transform: translateX(0); /* Remove the horizontal offset */
     justify-content: center;
@@ -1589,7 +1586,6 @@ footer {
   overflow-x: hidden;
 }
 
-
 .website-title {
   font-size: 2.8rem;
   width: calc(100% - 20px);
@@ -1640,7 +1636,6 @@ footer {
   justify-content: center;
   margin: 0 auto;
   height: 50vh;
-  
 }
 
 .media img {
@@ -1694,7 +1689,7 @@ footer {
 /* contact page*/
 .contact-form-container {
   flex-direction: column;
-  width: 100%; ;
+  width: 100%;
 }
 
 .form-side,
@@ -1740,17 +1735,16 @@ footer {
     padding: 15px 10px;
   }
   @media (max-width: 768px) {
-  .media img {
-    margin-bottom: 10px; /* Or whatever value looks good */
-    max-width: 50vh;
-    max-height: 100vh;
+    .media img {
+      margin-bottom: 10px; /* Or whatever value looks good */
+      max-width: 50vh;
+      max-height: 100vh;
+    }
+
+    .rebuildVideo {
+      margin-bottom: 10px;
+    }
   }
-  
-  .rebuildVideo {
-    margin-bottom: 10px;
-  }
-}
-  
 }
 
 /* Landscape orientation for mobile */
