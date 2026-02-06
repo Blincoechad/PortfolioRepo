@@ -72,8 +72,5 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Auto-refresh the page every 60 seconds
-  setTimeout(function(){
-    location.reload();
-  }, 60000);
+
 
