@@ -260,6 +260,7 @@ body {
   justify-content: center;
   margin-left: 50px;
   margin-top: 30px;
+  margin-bottom: 10px;
   white-space: nowrap;
   padding: 0.75em 1.5em;
   min-height: 44px;
@@ -267,13 +268,15 @@ body {
   letter-spacing: 0.15em;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
+  text-decoration: none;
   color: white;
   background: #05060a;
   border: none;
   border-radius: 999px;
   cursor: pointer;
   overflow: hidden;
-  transition: transform 0.5s ease;
+  box-shadow: 0 10px 20px black ;
+ 
 }
 
 .glow-btn:hover {
@@ -309,6 +312,15 @@ body {
   animation: spin 3s linear infinite;
   z-index: 0;
 }
+.glow-btn.no-glow::before,
+.glow-btn.no-glow::after {  
+  display: none;
+}
+.no-glow {
+  background-color: rgb(27, 10, 156);
+  box-shadow: 0 10px 20px black ;
+}
+
 
 @keyframes spin {
   to {
@@ -1171,6 +1183,114 @@ video {
   margin: auto;
   max-height: 400px; /* Adjust */
   object-fit: contain;
+}
+/* Project Preview Section */
+.project-preview-section {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.project-preview-title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 28px;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: underline;
+}
+
+.project-preview-card {
+  background: var(--bg-box-primary);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(2, 8, 20, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-preview-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(2, 8, 20, 0.75);
+}
+
+.project-preview-img {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  height: auto;
+  object-fit: unset;
+  object-position: top;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.project-preview-body {
+  padding: 28px 32px 26px;
+}
+
+.project-preview-name {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: white;
+  margin: 0 0 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-decoration: underline;
+}
+
+.project-preview-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 25px;
+  padding: 10px;
+  color: var(--text-muted);
+}
+
+.project-preview-btn {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/*  Responsive adjustments for website build  */
+@media (max-width: 768px) {
+  .project-preview-img {
+    height: 200px;
+    object-position: top;
+  }
+
+  .project-preview-body {
+    padding: 20px;
+  }
+
+  .project-preview-name {
+    font-size: 1.3rem;
+  }
+
+  .project-preview-title {
+    font-size: 1.6rem;
+  }
+
+  .project-preview-btn {
+    display: block;
+    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-preview-img {
+    height: 170px;
+  }
+
+  .project-preview-title {
+    font-size: 1.4rem;
+  }
 }
 
 /* Footer */
